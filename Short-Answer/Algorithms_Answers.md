@@ -12,6 +12,8 @@ Similar to a binary search. Need to find where the floor next to it is different
 
 number of floors = 20
 
+Time complexity : O(log n)
+
 ```
     Check middle floor (10) for breaking egg
         if egg breaks discard lower half of floors (each floor an egg breaks on append it to a list)
