@@ -51,21 +51,19 @@ class Test(unittest.TestCase):
         robot = SortingRobot(self.medium_list)
         robot.sort()
         print('\nMedium List\n    Target: 1948 \n    Your Time: ',
-              robot._time, '\n\n')        # print(robot._time)
+              robot._time, '\n\n')
         self.assertLess(robot._time, 1948)
 
         robot = SortingRobot(self.large_list)
         robot.sort()
         print('\nLarge List\n    Target: 27513 \n    Your Time: ',
               robot._time, '\n\n')
-        # print(robot._time)
         self.assertLess(robot._time, 27513)
 
         robot = SortingRobot(self.large_varied_list)
         robot.sort()
         print('\nLarge Varied List\n    Target: 28308 \n    Your Time: ',
               robot._time, '\n\n')
-        # print(robot._time)
         self.assertLess(robot._time, 28308)
 
 
