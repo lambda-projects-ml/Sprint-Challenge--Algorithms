@@ -125,6 +125,9 @@ class SortingRobot:
                     self.move_left()
                     self.swap_item()
                     self.set_light_on()
+                while self.compare_item() != None:
+                    self.move_left()
+                    self.swap_item()
 
 
 if __name__ == "__main__":
@@ -138,3 +141,5 @@ if __name__ == "__main__":
 
     robot.sort()
     print(robot._list)
+    print('#################### \n\n',
+          'I believe the time complexity is O(n^2) because of the nested while loop \n\n####################')
